@@ -23,7 +23,8 @@ const sidebarMenu = [
   { id: 20, name: "Infinite Scroll", url: "/Infinite Scroll" },
   { id: 21, name: "Pagination", url: "/pagination" },
   { id: 22, name: "Movie Song", url: "/movie-song" },
-  { id: 23, name: "Autocomplete", url: "/autocomplete" }
+  { id: 23, name: "Autocomplete", url: "/autocomplete" },
+  { id: 24, name: "Switch Case", url: "/switch-cases" }
 ];
 
 function Navbar() {

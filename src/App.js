@@ -20,6 +20,7 @@ import MapFilterReduce from "./components/MapFilterReduce/MapFilterReduce";
 import ParentMovieSong from "./components/MovieSongsRedux/ParentMovieSong";
 import Pagination from "./components/Pagination/Pagination";
 import Home from "./components/RouterComponents/Home";
+import SwitchCases from "./components/SwitchCases/SwitchCases";
 import ParentUseAsync from "./components/UseAsync/ParentUseAsync";
 import GrandParent from "./components/UseContext/GrandParent";
 import UseCustomLocalStorageHook from "./components/UseLocalStorage/UseCustomLocalStorageHook";
@@ -109,6 +110,10 @@ const routes = createBrowserRouter([
       {
         path: '/autocomplete',
         element: <ParentAutocomplete />
+      },
+      {
+        path: '/switch-cases',
+        element: <SwitchCases />
       },
       {
         path: "/*",
