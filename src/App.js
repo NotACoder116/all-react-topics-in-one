@@ -10,6 +10,7 @@ import UsersData from "./components/CustomHook/CustomUseFetch/UsersData";
 import UseWindowsSize from "./components/CustomHook/UseWindowsSize";
 import ParentUseIdle from "./components/CustomIdle/ParentUseIdle";
 import ParentState from "./components/customStateWithHistory/ParentState";
+import ParentFeatureFlag from "./components/FeatureFlag/ParentFeatureFlag";
 import ParentHoc from "./components/HOCComponents/ParentHoc.JS";
 import UseEffectParent from "./components/Hooks/CustomUseEffect/UseEffectParent";
 import CustomUseMemo from "./components/Hooks/CustomUseMemo";
@@ -109,6 +110,10 @@ const routes = createBrowserRouter([
       {
         path: '/autocomplete',
         element: <ParentAutocomplete />
+      },
+      {
+        path: '/feature-flag',
+        element: <ParentFeatureFlag />
       },
       {
         path: "/*",
