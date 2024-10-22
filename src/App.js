@@ -3,6 +3,7 @@ import { RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import AppLayout from "./AppLayout";
+import ParentAutocomplete from "./components/Autocomplete/ParentAutocomplete";
 import { ThemeContextProvider } from "./components/ChangeTheme/ChangeThemeContext";
 import DebounceInput from "./components/CustomHook/CustomUseDebounce/DebounceInput";
 import UsersData from "./components/CustomHook/CustomUseFetch/UsersData";
@@ -104,6 +105,10 @@ const routes = createBrowserRouter([
       {
         path: '/movie-song',
         element: <ParentMovieSong />
+      },
+      {
+        path: '/autocomplete',
+        element: <ParentAutocomplete />
       },
       {
         path: "/*",

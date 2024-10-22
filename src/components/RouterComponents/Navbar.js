@@ -22,7 +22,8 @@ const sidebarMenu = [
   { id: 19, name: "HOC", url: "/hoc" },
   { id: 20, name: "Infinite Scroll", url: "/Infinite Scroll" },
   { id: 21, name: "Pagination", url: "/pagination" },
-  { id: 22, name: "Movie Song", url: "/movie-song" }
+  { id: 22, name: "Movie Song", url: "/movie-song" },
+  { id: 23, name: "Autocomplete", url: "/autocomplete" }
 ];
 
 function Navbar() {
