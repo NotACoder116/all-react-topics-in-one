@@ -25,6 +25,7 @@ import GrandParent from "./components/UseContext/GrandParent";
 import UseCustomLocalStorageHook from "./components/UseLocalStorage/UseCustomLocalStorageHook";
 import UseReducerPractice from "./components/UseReducer/UseReducerPractice";
 import UserRef from "./components/UseRef/UserRef";
+import WhyDidYouUpdateParent from "./components/whyDidYouUpdate/WhyDidYouUpdateParent";
 
 const routes = createBrowserRouter([
   {
@@ -109,6 +110,10 @@ const routes = createBrowserRouter([
       {
         path: '/autocomplete',
         element: <ParentAutocomplete />
+      },
+      {
+        path: '/why-did-you-update',
+        element: <WhyDidYouUpdateParent />
       },
       {
         path: "/*",
