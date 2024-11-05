@@ -24,7 +24,11 @@ const sidebarMenu = [
   { id: 21, name: "Pagination", url: "/pagination" },
   { id: 22, name: "Movie Song", url: "/movie-song" },
   { id: 23, name: "Autocomplete", url: "/autocomplete" },
-  { id: 24, name: "Why did you update", url: "/why-did-you-update" }
+  { id: 24, name: "Why did you update", url: "/why-did-you-update" },
+  { id: 25, name: "Atlys Assignment", url: "/atlys-assignment" },
+  { id: 26, name: "storage", url: "/storage" },
+  { id: 27, name: "random-practice", url: "/random-practice" },
+  { id: 28, name: "Star Wars", url: "/star-wars" }
 ];
 
 function Navbar() {

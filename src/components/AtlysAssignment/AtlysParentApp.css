@@ -1,0 +1,30 @@
+/* .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .initial-input {
+    margin: 20px;
+  }
+  
+  .function-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .function-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .final-output {
+    margin-top: 40px;
+    font-size: 24px;
+    color: green;
+  }
+   */
