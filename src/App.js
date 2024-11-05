@@ -30,6 +30,7 @@ import Storage from "./components/Storage/Storage";
 import RandomPractice from "./components/RandomPractice/RandomPractice";
 import StarWars from "./components/StarWars/StarWars";
 import Pokemon from "./components/PokemonApp/Pokemon";
+import Products from "./components/ECommerce/Products";
 
 const routes = createBrowserRouter([
   {
@@ -138,6 +139,10 @@ const routes = createBrowserRouter([
       {
         path: '/pokemons',
         element: <Pokemon />
+      },
+      {
+        path: '/products',
+        element: <Products />
       },
       {
         path: "/*",

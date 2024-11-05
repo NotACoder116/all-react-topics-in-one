@@ -29,7 +29,8 @@ const sidebarMenu = [
   { id: 26, name: "storage", url: "/storage" },
   { id: 27, name: "random-practice", url: "/random-practice" },
   { id: 28, name: "Star Wars", url: "/star-wars" },
-  { id: 29, name: "Pokemons", url: "/pokemons" }
+  { id: 29, name: "Pokemons", url: "/pokemons" },
+  { id: 30, name: "products", url: "/products" }
 ];
 
 function Navbar() {
