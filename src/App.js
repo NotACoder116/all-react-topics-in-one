@@ -29,6 +29,7 @@ import AtlysParentApp from './components/AtlysAssignment/AtlysParentApp';
 import Storage from "./components/Storage/Storage";
 import RandomPractice from "./components/RandomPractice/RandomPractice";
 import StarWars from "./components/StarWars/StarWars";
+import Pokemon from "./components/PokemonApp/Pokemon";
 
 const routes = createBrowserRouter([
   {
@@ -133,6 +134,10 @@ const routes = createBrowserRouter([
       {
         path: '/star-wars',
         element: <StarWars />
+      },
+      {
+        path: '/pokemons',
+        element: <Pokemon />
       },
       {
         path: "/*",

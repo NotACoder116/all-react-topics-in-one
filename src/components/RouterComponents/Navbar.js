@@ -28,7 +28,8 @@ const sidebarMenu = [
   { id: 25, name: "Atlys Assignment", url: "/atlys-assignment" },
   { id: 26, name: "storage", url: "/storage" },
   { id: 27, name: "random-practice", url: "/random-practice" },
-  { id: 28, name: "Star Wars", url: "/star-wars" }
+  { id: 28, name: "Star Wars", url: "/star-wars" },
+  { id: 29, name: "Pokemons", url: "/pokemons" }
 ];
 
 function Navbar() {
