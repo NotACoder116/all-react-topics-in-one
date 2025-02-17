@@ -20,7 +20,8 @@ const ChildRefComponent = forwardRef((props, ref) => {
 
     useImperativeHandle(ref, () => {
         return {
-            focusInput
+            focusInput,
+            alert: () => alert("Hii")
         }
     })
 

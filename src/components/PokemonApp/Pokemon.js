@@ -47,7 +47,7 @@ const Pokemon = () => {
           onChange={handleSelectChange}
           className="w-full p-3 border border-gray-300 rounded-lg shadow-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
-          <option value="">Select a Pokémon</option>
+          <option value="">Select a Pokemon</option>
           {pokemonList.map((pokemon) => (
             <option key={pokemon.name} value={pokemon.url}>
               {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}

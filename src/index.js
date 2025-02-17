@@ -6,16 +6,24 @@ import reportWebVitals from "./reportWebVitals";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import { Provider } from "react-redux";
 import { store } from "./components/store";
+import AuthProvider from "./components/ContextApiUsingReducer/AuthProvider";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const client = new QueryClient();
+
 root.render(
-  <Provider store={store}>
-    <ErrorBoundary>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </ErrorBoundary>
-  </Provider>
+  <QueryClientProvider client={client}>
+    <Provider store={store}>
+      <AuthProvider>
+        <ErrorBoundary>
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>
+        </ErrorBoundary>
+      </AuthProvider>
+    </Provider>
+  </QueryClientProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

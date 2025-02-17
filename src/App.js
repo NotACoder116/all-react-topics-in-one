@@ -10,7 +10,6 @@ import UsersData from "./components/CustomHook/CustomUseFetch/UsersData";
 import UseWindowsSize from "./components/CustomHook/UseWindowsSize";
 import ParentUseIdle from "./components/CustomIdle/ParentUseIdle";
 import ParentState from "./components/customStateWithHistory/ParentState";
-import ParentHoc from "./components/HOCComponents/ParentHoc.JS";
 import UseEffectParent from "./components/Hooks/CustomUseEffect/UseEffectParent";
 import UseImperativeHandle from "./components/Hooks/UseImperativeHandle";
 import UseMemoUseCallback from "./components/Hooks/UseMemoUseCallback";
@@ -31,6 +30,18 @@ import RandomPractice from "./components/RandomPractice/RandomPractice";
 import StarWars from "./components/StarWars/StarWars";
 import Pokemon from "./components/PokemonApp/Pokemon";
 import Products from "./components/ECommerce/Products";
+import HigherOrderComp from "./components/HigherOrderComponent/HigherOrderComp";
+import CompountComponent from "./components/CompoundComponent/CompountComponent";
+import AuthProvider from "./components/ContextApiUsingReducer/AuthProvider";
+import ParentCustomCrousel from "./components/CustomCrousel/ParentCustomCrousel";
+import PracticeByChoice from "./components/RandomPractice/PracticeByChoice";
+import ToggleContainer from "./components/learnReactQuery/ToggleContainer";
+import Storybook from "./components/LearnStorybook/Storybook";
+import PracticeComp from "./components/PracticeComp/PracticeComp";
+import HolyGrailLayout from "./components/HolyGrailLayout/HolyGrailLayout";
+import Tabs from "./components/Tabs/Tabs";
+import Shimmer from "./components/Shimmer/Shimmer";
+import NestedComments from "./components/NestedComments/NestedComments";
 
 const routes = createBrowserRouter([
   {
@@ -98,7 +109,7 @@ const routes = createBrowserRouter([
       },
       {
         path: '/hoc',
-        element: <ParentHoc />
+        element: <HigherOrderComp />
       },
       {
         path: '/Infinite Scroll',
@@ -143,6 +154,50 @@ const routes = createBrowserRouter([
       {
         path: '/products',
         element: <Products />
+      },
+      {
+        path: '/compount-component',
+        element: <CompountComponent />
+      },
+      {
+        path: '/context-api-using-use-reducer',
+        element: <AuthProvider />
+      },
+      {
+        path: '/custom-crousel',
+        element: <ParentCustomCrousel />
+      },
+      {
+        path: '/anything-random',
+        element: <PracticeByChoice />
+      },
+      {
+        path: '/learn-react-query',
+        element: <ToggleContainer />
+      },
+      {
+        path: '/learn-storybook',
+        element: <Storybook />
+      },
+      {
+        path: '/learn-wrapped-practice',
+        element: <PracticeComp />
+      },
+      {
+        path: '/holy-grail-layout',
+        element: <HolyGrailLayout />
+      },
+      {
+        path: '/tabs',
+        element: <Tabs />
+      },
+      {
+        path: '/shimmer',
+        element: <Shimmer />
+      },
+      {
+        path: '/nested-comments',
+        element: <NestedComments />
       },
       {
         path: "/*",

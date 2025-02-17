@@ -30,7 +30,18 @@ const sidebarMenu = [
   { id: 27, name: "random-practice", url: "/random-practice" },
   { id: 28, name: "Star Wars", url: "/star-wars" },
   { id: 29, name: "Pokemons", url: "/pokemons" },
-  { id: 30, name: "products", url: "/products" }
+  { id: 30, name: "products", url: "/products" },
+  { id: 31, name: "Compound Component", url: "/compount-component" },
+  { id: 32, name: "Context api using use reducer", url: "/context-api-using-use-reducer" },
+  { id: 33, name: "Custom Crousel", url: "/custom-crousel" },
+  { id: 34, name: "Anything Random", url: "/anything-random" },
+  { id: 35, name: "Learn React Query", url: "/learn-react-query" },
+  { id: 36, name: "Learn Storybook", url: "/learn-storybook" }, 
+  { id: 37, name: "Learn Wrapped Prsctice", url: "/learn-wrapped-practice" }, 
+  { id: 38, name: "Holy Grail Layout", url: "/holy-grail-layout" },
+  { id: 39, name: "Tabs", url: "/tabs" },
+  { id: 40, name: "Shimmer UI", url: "/shimmer" }, 
+  { id: 41, name: "Nested Comments", url: "/nested-comments" }
 ];
 
 function Navbar() {

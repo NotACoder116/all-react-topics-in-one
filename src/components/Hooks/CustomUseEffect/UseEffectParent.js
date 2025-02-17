@@ -11,7 +11,7 @@ const UseEffectParent = () => {
       return () => {
         console.log("Unmount")
       }
-    }, [count]);
+    }, []);
 
   return (
     <div>

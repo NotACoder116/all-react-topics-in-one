@@ -8,7 +8,6 @@ const Products = () => {
     useEffect(() => {
         const fetchCartItems = async () => {
            const response = await axios.get('https://fakestoreapi.com/carts/2');
-           console.log(response.data.products);
            const fetchedProducts = response.data.products;
 
            const productDetails = await Promise.all(

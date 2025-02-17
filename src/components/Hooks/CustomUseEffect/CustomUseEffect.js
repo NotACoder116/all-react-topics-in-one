@@ -15,7 +15,6 @@ const CustomUseEffect = (effectCallback, depends) => {
         }
     }
   }
-
   // If the depends change or no dependies
    const dependancyChanged = depends ? JSON.stringify(prevDepends.current) !== JSON.stringify(depends) : true;
 

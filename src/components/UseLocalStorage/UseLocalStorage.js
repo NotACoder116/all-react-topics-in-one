@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useDebugValue, useEffect, useState } from 'react'
 
 function savedValue(key, initialValue) {
    if (JSON.parse(localStorage.getItem(key))) {
@@ -17,6 +17,9 @@ function UseLocalStorage(key, initialValue) {
     const [value, setValue] = useState(() => {
         return savedValue(key, initialValue)
     });
+
+    useDebugValue("Testinggg")
+    useDebugValue([key, initialValue])
 
     useEffect(() => {
        localStorage.setItem(key, JSON.stringify(value));
