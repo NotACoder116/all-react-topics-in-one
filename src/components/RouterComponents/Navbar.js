@@ -41,7 +41,11 @@ const sidebarMenu = [
   { id: 38, name: "Holy Grail Layout", url: "/holy-grail-layout" },
   { id: 39, name: "Tabs", url: "/tabs" },
   { id: 40, name: "Shimmer UI", url: "/shimmer" }, 
-  { id: 41, name: "Nested Comments", url: "/nested-comments" }
+  { id: 41, name: "Nested Comments", url: "/nested-comments" },
+  { id: 42, name: "Image Slider", url: "/image-slider" },
+  { id: 43, name: "Progress Bar", url: "/progress-bar" }, 
+  { id: 44, name: "Mouse Move", url: "/mouse-move" }, 
+  { id: 45, name: "Feature Flag", url: "/feature-flag" }
 ];
 
 function Navbar() {

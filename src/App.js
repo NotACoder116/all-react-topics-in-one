@@ -24,7 +24,7 @@ import UseCustomLocalStorageHook from "./components/UseLocalStorage/UseCustomLoc
 import UseReducerPractice from "./components/UseReducer/UseReducerPractice";
 import UserRef from "./components/UseRef/UserRef";
 import WhyDidYouUpdateParent from "./components/whyDidYouUpdate/WhyDidYouUpdateParent";
-import AtlysParentApp from './components/AtlysAssignment/AtlysParentApp';
+import AtlysParentApp from "./components/AtlysAssignment/AtlysParentApp";
 import Storage from "./components/Storage/Storage";
 import RandomPractice from "./components/RandomPractice/RandomPractice";
 import StarWars from "./components/StarWars/StarWars";
@@ -42,6 +42,11 @@ import HolyGrailLayout from "./components/HolyGrailLayout/HolyGrailLayout";
 import Tabs from "./components/Tabs/Tabs";
 import Shimmer from "./components/Shimmer/Shimmer";
 import NestedComments from "./components/NestedComments/NestedComments";
+import ImageSlider from "./components/ImageSlider.js/ImageSlider";
+import ParentProgress from "./components/ProgressBar/ParentProgress";
+import MouseMove from "./components/MouseMove/MouseMove";
+import FeatureFlagProvider from "./components/FeatureFlag/FeatureFlagProvider";
+import FeatureFlag from "./components/FeatureFlag/FeatureFlag";
 
 const routes = createBrowserRouter([
   {
@@ -108,96 +113,112 @@ const routes = createBrowserRouter([
         element: <ParentUseAsync />,
       },
       {
-        path: '/hoc',
-        element: <HigherOrderComp />
+        path: "/hoc",
+        element: <HigherOrderComp />,
       },
       {
-        path: '/Infinite Scroll',
-        element: <InfiniteScroll />
+        path: "/Infinite Scroll",
+        element: <InfiniteScroll />,
       },
       {
-        path: '/pagination',
-        element: <Pagination />
+        path: "/pagination",
+        element: <Pagination />,
       },
       {
-        path: '/movie-song',
-        element: <ParentMovieSong />
+        path: "/movie-song",
+        element: <ParentMovieSong />,
       },
       {
-        path: '/autocomplete',
-        element: <ParentAutocomplete />
+        path: "/autocomplete",
+        element: <ParentAutocomplete />,
       },
       {
-        path: '/why-did-you-update',
-        element: <WhyDidYouUpdateParent />
+        path: "/why-did-you-update",
+        element: <WhyDidYouUpdateParent />,
       },
       {
-        path: '/atlys-assignment',
-        element: <AtlysParentApp />
+        path: "/atlys-assignment",
+        element: <AtlysParentApp />,
       },
       {
-        path: '/storage',
-        element: <Storage />
+        path: "/storage",
+        element: <Storage />,
       },
       {
-        path: '/random-practice',
-        element: <RandomPractice />
+        path: "/random-practice",
+        element: <RandomPractice />,
       },
       {
-        path: '/star-wars',
-        element: <StarWars />
+        path: "/star-wars",
+        element: <StarWars />,
       },
       {
-        path: '/pokemons',
-        element: <Pokemon />
+        path: "/pokemons",
+        element: <Pokemon />,
       },
       {
-        path: '/products',
-        element: <Products />
+        path: "/products",
+        element: <Products />,
       },
       {
-        path: '/compount-component',
-        element: <CompountComponent />
+        path: "/compount-component",
+        element: <CompountComponent />,
       },
       {
-        path: '/context-api-using-use-reducer',
-        element: <AuthProvider />
+        path: "/context-api-using-use-reducer",
+        element: <AuthProvider />,
       },
       {
-        path: '/custom-crousel',
-        element: <ParentCustomCrousel />
+        path: "/custom-crousel",
+        element: <ParentCustomCrousel />,
       },
       {
-        path: '/anything-random',
-        element: <PracticeByChoice />
+        path: "/anything-random",
+        element: <PracticeByChoice />,
       },
       {
-        path: '/learn-react-query',
-        element: <ToggleContainer />
+        path: "/learn-react-query",
+        element: <ToggleContainer />,
       },
       {
-        path: '/learn-storybook',
-        element: <Storybook />
+        path: "/learn-storybook",
+        element: <Storybook />,
       },
       {
-        path: '/learn-wrapped-practice',
-        element: <PracticeComp />
+        path: "/learn-wrapped-practice",
+        element: <PracticeComp />,
       },
       {
-        path: '/holy-grail-layout',
-        element: <HolyGrailLayout />
+        path: "/holy-grail-layout",
+        element: <HolyGrailLayout />,
       },
       {
-        path: '/tabs',
-        element: <Tabs />
+        path: "/tabs",
+        element: <Tabs />,
       },
       {
-        path: '/shimmer',
-        element: <Shimmer />
+        path: "/shimmer",
+        element: <Shimmer />,
       },
       {
-        path: '/nested-comments',
-        element: <NestedComments />
+        path: "/nested-comments",
+        element: <NestedComments />,
+      },
+      {
+        path: "/image-slider",
+        element: <ImageSlider />,
+      },
+      {
+        path: "/progress-bar",
+        element: <ParentProgress />,
+      },
+      {
+        path: "/mouse-move",
+        element: <MouseMove />,
+      },
+      {
+        path: "/feature-flag",
+        element: <FeatureFlag />,
       },
       {
         path: "/*",
@@ -209,9 +230,11 @@ const routes = createBrowserRouter([
 
 function App() {
   return (
-    <ThemeContextProvider>
-      <RouterProvider router={routes}></RouterProvider>
-    </ThemeContextProvider>
+    <FeatureFlagProvider>
+      <ThemeContextProvider>
+        <RouterProvider router={routes}></RouterProvider>
+      </ThemeContextProvider>
+    </FeatureFlagProvider>
   );
 }
 
