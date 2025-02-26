@@ -45,7 +45,9 @@ const sidebarMenu = [
   { id: 42, name: "Image Slider", url: "/image-slider" },
   { id: 43, name: "Progress Bar", url: "/progress-bar" }, 
   { id: 44, name: "Mouse Move", url: "/mouse-move" }, 
-  { id: 45, name: "Feature Flag", url: "/feature-flag" }
+  { id: 45, name: "Feature Flag", url: "/feature-flag" }, 
+  { id: 46, name: "Parent Modal", url: "/parent-modal" }, 
+  { id: 47, name: "Employee Management", url: "/employee-management" }
 ];
 
 function Navbar() {
