@@ -47,6 +47,8 @@ import ParentProgress from "./components/ProgressBar/ParentProgress";
 import MouseMove from "./components/MouseMove/MouseMove";
 import FeatureFlagProvider from "./components/FeatureFlag/FeatureFlagProvider";
 import FeatureFlag from "./components/FeatureFlag/FeatureFlag";
+import ParentModal from "./components/Modal/ParentModal";
+import EmployeeManagement from "./components/EmployeeList/EmployeeManagement";
 
 const routes = createBrowserRouter([
   {
@@ -221,9 +223,17 @@ const routes = createBrowserRouter([
         element: <FeatureFlag />,
       },
       {
+        path: "/parent-modal",
+        element: <ParentModal />,
+      },
+      {
+        path: "/employee-management",
+        element: <EmployeeManagement />,
+      },
+      {
         path: "/*",
         element: <h1>Page Not Found</h1>,
-      },
+      }
     ],
   },
 ]);
