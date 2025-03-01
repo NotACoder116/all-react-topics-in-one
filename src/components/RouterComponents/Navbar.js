@@ -47,7 +47,9 @@ const sidebarMenu = [
   { id: 44, name: "Mouse Move", url: "/mouse-move" }, 
   { id: 45, name: "Feature Flag", url: "/feature-flag" }, 
   { id: 46, name: "Parent Modal", url: "/parent-modal" }, 
-  { id: 47, name: "Employee Management", url: "/employee-management" }
+  { id: 47, name: "Employee Management", url: "/employee-management" }, 
+  { id: 48, name: "Folder Structure", url: "/folder-structure" }, 
+  { id: 49, name: "Form Validations", url: "/form-validations" }
 ];
 
 function Navbar() {

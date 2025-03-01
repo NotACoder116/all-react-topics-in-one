@@ -49,6 +49,8 @@ import FeatureFlagProvider from "./components/FeatureFlag/FeatureFlagProvider";
 import FeatureFlag from "./components/FeatureFlag/FeatureFlag";
 import ParentModal from "./components/Modal/ParentModal";
 import EmployeeManagement from "./components/EmployeeList/EmployeeManagement";
+import ParentFolderStructure from "./components/FolderStructure/ParentFolderStructure";
+import FormValidations from "./components/FormValidations/FormValidations";
 
 const routes = createBrowserRouter([
   {
@@ -229,6 +231,14 @@ const routes = createBrowserRouter([
       {
         path: "/employee-management",
         element: <EmployeeManagement />,
+      }, 
+      {
+        path: "/folder-structure",
+        element: <ParentFolderStructure />,
+      }, 
+      {
+        path: "/form-validations",
+        element: <FormValidations />,
       },
       {
         path: "/*",
