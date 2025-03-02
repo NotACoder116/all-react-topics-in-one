@@ -51,6 +51,7 @@ import ParentModal from "./components/Modal/ParentModal";
 import EmployeeManagement from "./components/EmployeeList/EmployeeManagement";
 import ParentFolderStructure from "./components/FolderStructure/ParentFolderStructure";
 import FormValidations from "./components/FormValidations/FormValidations";
+import ComponentShouldUpdate from "./components/ComponentShouldUpdate/ComponentShouldUpdate";
 
 const routes = createBrowserRouter([
   {
@@ -239,6 +240,10 @@ const routes = createBrowserRouter([
       {
         path: "/form-validations",
         element: <FormValidations />,
+      }, 
+      {
+        path: "/component-should-update",
+        element: <ComponentShouldUpdate />,
       },
       {
         path: "/*",

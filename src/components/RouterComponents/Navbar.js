@@ -49,7 +49,8 @@ const sidebarMenu = [
   { id: 46, name: "Parent Modal", url: "/parent-modal" }, 
   { id: 47, name: "Employee Management", url: "/employee-management" }, 
   { id: 48, name: "Folder Structure", url: "/folder-structure" }, 
-  { id: 49, name: "Form Validations", url: "/form-validations" }
+  { id: 49, name: "Form Validations", url: "/form-validations" }, 
+  { id: 50, name: "Component Should Update", url: "/component-should-update" }
 ];
 
 function Navbar() {
