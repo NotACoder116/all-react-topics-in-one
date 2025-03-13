@@ -50,7 +50,11 @@ const sidebarMenu = [
   { id: 47, name: "Employee Management", url: "/employee-management" }, 
   { id: 48, name: "Folder Structure", url: "/folder-structure" }, 
   { id: 49, name: "Form Validations", url: "/form-validations" }, 
-  { id: 50, name: "Component Should Update", url: "/component-should-update" }
+  { id: 50, name: "Component Should Update", url: "/component-should-update" }, 
+  { id: 51, name: "Custom Use Memo", url: "/custom-use-memo" }, 
+  { id: 52, name: "Accordion Using Compound Component", url: "/accordion-using-compound-component" }, 
+  { id: 53, name: "Country Capital Game", url: "/country-capital-game" }, 
+  { id: 54, name: "Use Async", url: "/use-async" }
 ];
 
 function Navbar() {

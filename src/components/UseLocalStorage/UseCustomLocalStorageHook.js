@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import UseLocalStorage from './UseLocalStorage';
 const UseCustomLocalStorageHook = () => {
    const [inputValue, setInputValue] = UseLocalStorage('name', '');

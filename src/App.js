@@ -52,6 +52,9 @@ import EmployeeManagement from "./components/EmployeeList/EmployeeManagement";
 import ParentFolderStructure from "./components/FolderStructure/ParentFolderStructure";
 import FormValidations from "./components/FormValidations/FormValidations";
 import ComponentShouldUpdate from "./components/ComponentShouldUpdate/ComponentShouldUpdate";
+import ParentCustomUseMemo from "./components/CustomUseMemo/ParentCustomUseMemo";
+import ParentAccordion from "./components/AccordionUsingCompoundComp/ParentAccordion";
+import CountryCapitalGame from "./components/CountryCapitalGame/CountryCapitalGame";
 
 const routes = createBrowserRouter([
   {
@@ -170,6 +173,10 @@ const routes = createBrowserRouter([
         element: <CompountComponent />,
       },
       {
+        path: "/accordion-using-compound-component",
+        element: <ParentAccordion />,
+      },
+      {
         path: "/context-api-using-use-reducer",
         element: <AuthProvider />,
       },
@@ -244,6 +251,14 @@ const routes = createBrowserRouter([
       {
         path: "/component-should-update",
         element: <ComponentShouldUpdate />,
+      },
+      {
+        path: "/custom-use-memo",
+        element: <ParentCustomUseMemo />,
+      },
+      {
+        path: "/country-capital-game",
+        element: <CountryCapitalGame />,
       },
       {
         path: "/*",
